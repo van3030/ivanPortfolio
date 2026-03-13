@@ -1042,6 +1042,7 @@ main {
   height: 1.5rem;
   flex-direction: row;
   margin-top: 20px;
+  white-space: nowrap;
 }
 
 .play-link:hover {
@@ -2716,6 +2717,7 @@ main {
 }
 
 }
+
 
 
 
