@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,
+    100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;
+    1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;
+    1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleBento.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.x.x/css/all.min.css">
+    <title>Your Name | Frontend Developer</title>
+</head>
+<body>
+    <div class="main-layout">
+        <aside class="sidebar">
+           <div class="avatar-wrap">
+             <img src="images/ivan.png.jpg" alt="ivanPic" />
+            </div>
+                <h2>Ivan Ross Reyes</h2>
+                <p>WebDev | Philippines</p>
+            <div class="contact-links">
+                <a href="tel:+639368829347" class="tel-link-item">📞 +63 936 882 9347</a>
+                <p class="link-item">🎂 March 25, 1983</p>
+             </div>
+
+          <div class="skills-section">
+            <div class="skill">
+                <span>HTML</span>
+                <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+             </div>
+               <div class="skill">
+                <span>CSS</span>
+                <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+             </div>
+         <div class="skill">
+            <span>JavaScript</span>
+            <div class="bar"><div class="fill" style="width: 75%;"></div></div>
+        </div>
+    </div>
+
+    <div class="call-btn-container">
+        <a href="tel:+639368829347" class="call-btn">
+            <i class="fa-solid fa-phone"></i>
+            <span>Call</span>
+        </a>
+
+    </div>
+</aside>
+<!-- Mini Sidebar -->
+<aside class="mini-sidebar">
+  <!-- Profile -->
+   <div class="sidebar-item profile-trigger">
+     <i class="fa-solid fa-circle-user" title="Profile"></i>
+     <div class="photo-tooltip">
+    <img src="images/ivan.png.jpg" alt="Profile">
+     <span>Online</span>
+   </div>
+  </div>
+  <div class="ms-webDev"  data-tooltip="Web Developer">
+     <i class="fa-solid fa-code" title="Web Developer"></i>
+ </div>
+ <div class="ms-location" data-tooltip="Tanza Cavite, Philipines">
+      <i class="fa-solid fa-location-dot" title="Location"></i>
+</div>
+
+
+  <div class="divider"></div>
+
+  <!-- Contact -->
+   <div class="ms-Phone" data-tooltip="+639368829347">
+    <i class="fa-solid fa-phone" title="Phone"></i>
+  </div>
+  <div class="ms-birthdate" data-tooltip="March 25, 1983">
+      <i class="fa-solid fa-calendar-days" title="Birthdate"></i>
+ </div>
+
+  <div class="divider"></div>
+
+  <!-- Skills -->
+   <div class="ms-HTML5">
+     <i class="fa-brands fa-html5" title="HTML5"></i>
+     <div class="skill-bar-container">
+            <span class="skill-label">HTML</span>
+            <div class="bar-track">
+                <div class="bar-fill html-fill"></div>
+            </div>
+        </div>
+   </div>
+   <div class="ms-CSS3">
+      <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+      <div class="skill-bar-container">
+            <span class="skill-label">CSS3</span>
+            <div class="bar-track">
+                <div class="bar-fill css-fill"></div>
+            </div>
+        </div>
+    </div>
+    <div class="ms-javascript">
+      <i class="fa-brands fa-js" title="JavaScript"></i>
+      <div class="skill-bar-container">
+        <span class="skill-label">Javascript</span>
+            <div class="bar-track">
+                <div class="bar-fill js-fill"></div>
+            </div>
+        </div>
+    </div>
+ 
+     <div class="spacer"></div>
+
+  <!-- Call Button -->
+  <div class="mini-call-btn">
+    <a href="tel:+639368829347">
+          <i class="fa-solid fa-phone"></i>
+     </a>
+  </div>
+</aside>
+<main>
+        <header>
+            <nav class="top-nav">
+                <div class="logo-frame">
+                     <div class="logo">
+                    <img src="images/irLogo.png" alt="irLogo">
+                </div>
+
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li class="nav-link">
+                            <a href="#projects" >Project</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="resume/Ivan Ross Reyes - Resume.pdf">Resume</a>
+                        </li>
+                    </ul>
+                    <div class="nightmode">
+                      <div class="theme-toggle">
+                        <input type="checkbox" id="darkModeToggle" />
+                        <label for="darkModeToggle" class="toggle">
+                            <span class="icon sun">☀️</span>
+                            <span class="icon moon">🌙</span>
+                            <span class="knob"></span>
+                        </label>
+                     </div>
+                    </div>
+                      <div class="hamburger-svg">
+                        <img class="hamburger-image-svg" src="images/icon-hamburger.svg" alt="hamburger">
+                     </div>
+                     <div class="mobile-menu" id="mobileMenu">
+                     <a  href="#" class="profile-modal">Profile</a>
+                        <a href="resume/Ivan Ross Reyes - Resume.pdf">Resume</a>
+                        <a href="#projects">Projects</a>
+                        <div class="dark-theme-wrapper">
+                            <div class="darkMode-menu">Dark Mode</div>
+                               <div class="nightmode-mobile">
+                                    <div class="theme-toggle">
+                                    <input type="checkbox" id="darkModeToggle" />
+                                        <label for="darkModeToggle" class="toggle">
+                                            <span class="icon sun">☀️</span>
+                                            <span class="icon moon">🌙</span>
+                                            <span class="knob"></span>
+                                        </label>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                    </nav>
+            <div class="hero-section">
+                <h1>I Build Modern and Fast Websites</h1>
+                <p>Web Development / UI UX Design</p>
+            </div>
+        </header>
+        <section id="projects" class="bento-container">
+            <section class="project-card">
+                <div class="project-info">
+                    <p class="label">Featured Project</p>
+                    <h2 class="title">Sunnyside Agency</h2>
+                    <p class="description">
+                    Pixel-perfect landing page built from a provided design. 
+                    Focused on responsive layout, semantic HTML, and clean CSS.
+                    </p>
+                    
+                    <div class="button-group">
+                    <a href="https://van3030.github.io/Sunny-side-agency-landing-page/" class="btn btn-live">
+                        <span class="icon">▶</span> Live Demo
+                    </a>
+                    <a href="https://github.com/van3030" class="btn btn-github">Github</a>
+                    </div>
+                </div>
+
+                <figure class="project-image">
+                    <img src="images/sunnyside.png" alt="Sunnyside Agency landing page preview">
+                </figure>
+           </section>
+            
+            <div class="bento-item featured">
+                <div class="project-content">
+                    <div class="content">
+                        <div class="header">
+                            <span class="tag">Featured Project</span>
+                            <h2>Sunnyside Agency</h2>
+                            <p>Frontend Mentor Challenge</p>
+                    </div>
+                        <div class="ss-description">
+                            <p>
+                                Pixel-perfect landing page built from a provided design.<br>
+                                Focused on responsive layout, semantic HTML, and clean CSS.
+                            </p>
+                        </div>
+                    </div>
+                      <div class="ss-btn">
+                        <a href="https://van3030.github.io/Sunny-side-agency-landing-page/" class="play-link">
+                            ▶ Live Demo
+                        </a>
+                        <a href="https://github.com/van3030" class="play-link-2">
+                            Github
+                        </a>
+                     </div>
+                </div>
+               
+                <div class="image-wrapper">
+                      <img  src="images/sunnyside.png" alt="Sunnyside">
+                 </div>
+            </div>
+
+            <div class="bento-item logic">
+
+                <div class="logic-content">
+                    <div class="calculator-header">
+                      <h3>Original Math Engine</h3>
+                        <p class="cal-description">Pure Vanilla JS logic built from scratch.
+                          <span class="calculator-btn">
+                             <a href="https://van3030.github.io/Calculator-Logic/" class="calculator-play-link">
+                                 ▶ Live Demo
+                             </a>
+                            <a href="https://github.com/van3030" class="calculator-play-link-2">
+                                Github
+                            </a>
+                        </span>
+                       </p>
+                     </div>
+                     <div class="calculator-image-wrapper">
+                        <img src="images/calculator.png" alt="calculator">
+                  </div>
+                </div>
+            </div>
+
+            <div class="bento-item skills">
+                <h3>My Stack</h3>
+                <ul>
+                <li>HTML5 / CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>Responsive Design</li>
+                </ul>
+            </div>
+
+            <div class="bento-item task">
+             <h3 class="class-title">Task Manager</h3>
+                 <ul>
+                    <li>
+                        Add/Delete Task
+                    </li>
+                    <li>
+                        LocalStorage Persistence
+                    </li>
+                    <li>
+                        Dom Manipulation
+                    </li>
+                    <li>
+                        Vanila JS
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="how-can-I-help-section">
+                <h2>What can I help you with?</h2>
+                <div class="help-card-wrapper">
+                    <div class="help-cards">
+                          <h4 class="hyw-Title">
+                                UI Improvement
+                             </h4>
+                            <p>
+                               "Layout • Spacing • Polish"
+                            </p>
+                         </div>
+
+                        <div class="help-cards">
+                             <h4 class="hyw-Title">
+                                Landing Pages
+                             </h4>
+                            <p>
+                                "Fast • Responsive • Clean"
+                            </p>
+                        </div>
+
+                        <div class="help-cards">
+                              <h4 class="hyw-Title">
+                                Small Web apps
+                             </h4>
+                            <p>
+                                "JS Vanilla Javascript Logic"
+                            </p>
+                     </div>
+                </div>
+
+            </div>
+
+                  <div class="skills-marquee">
+            <div class="marquee-content">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
+
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
+
+                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
+            </div>
+         </div>
+        <footer class="site-footer">
+             <div class="footer-container">
+                
+                <div class="footer-logo">
+                    <img src="images/irLogo.png" alt="irLogo">
+                </div>
+
+                <nav class="footer-links">
+                    <a href="https://www.linkedin.com/in/ivanross-reyes-0117b6324/">LINKEDIN</a>
+                    <a href="https://github.com/van3030">GITHUB</a>
+                    <a href="mailto:irreyes30@gmail.com">EMAIL</a>
+                </nav>
+
+                <div class="footer-copyright">
+                <p>&copy; 2026 Ivan Ross Reyes. All Rights Reserved.</p>
+                </div>
+
+            </div>
+        </footer>
+    </main>
+  </div>
+</div>
+
+<div id="profileModal" class="modal-overlay">
+  <div class="modal-content">
+    <button class="close-btn-modal" id="closeModal">&times;</button>
+    
+    <div class="profile-card">
+      <div class="profile-header">
+        <div class="image-ring">
+          <img src="images/ivan.png.jpg" alt="Ivan Ross Reyes- profile-name">
+        </div>
+        <h1>Ivan Ross Reyes</h1>
+        <p class="subtitle">WebDev | Philippines</p>
+      </div>
+
+      <div class="contact-info">
+        <p><span>📞</span> +63 936 882 9347</p>
+        <p><span>🎂</span> March 25, 1983</p>
+      </div>
+
+      <div class="skills-section">
+        <div class="skill">
+          <label>HTML</label>
+          <div class="progress-bar"><div class="fill" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill">
+          <label>CSS</label>
+          <div class="progress-bar"><div class="fill" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill">
+          <label>JAVASCRIPT</label>
+          <div class="progress-bar"><div class="fill" style="width: 75%;"></div></div>
+        </div>
+      </div>
+
+      <button class="call-btn-modal">📞 Call</button>
+    </div>
+  </div>
+</div>
+<script src="indexBento.js"></script>
+
+</body>
+</html> 
