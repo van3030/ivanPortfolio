@@ -1067,6 +1067,7 @@ main {
   flex-direction: row;
   margin-top: 20px;
   border: 2px solid #623686;
+  white-space: nowrap;
 }
 
 .play-link-2:hover {
@@ -2715,6 +2716,7 @@ main {
 }
 
 }
+
 
 
 
